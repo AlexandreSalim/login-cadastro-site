@@ -1,0 +1,62 @@
+<nav
+[class.nav]="!isOpen" 
+class="bg-white h-16 flex items-center justify-between pt-3 pb-3 pr-8 px-8" 
+>
+    <div class="logo">
+        <mat-icon>home</mat-icon>
+        <mat-icon>home</mat-icon>
+        <mat-icon>home</mat-icon>
+    </div>
+
+    <div class="hidden xl:flex items-center justify-around gap-5 div-pai-width">
+        <div class="flex items-center">
+            <div class="div"> <a href="" class="aHover">Produtos</a> </div>
+            <div class="div"> <a href="" class="aHover">Preço</a> </div>
+            <div class="div"> <a href="" class="aHover">Blog</a> </div>
+            <div class="div"> <a href="" class="aHover">Materiais</a> </div>
+        </div>
+
+        <div class="div2"><a href="">Fale com um especialista</a></div>
+        <div 
+        class="flex items-center justify-between 
+        bacgroud-orange text-white px-5 py-2 rounded-full 
+        gap-3 font-bold div3"
+        >
+            <mat-icon>account_circle</mat-icon> <a href="">Área do usuário</a>
+        </div>
+
+    </div>
+
+    <div (click)="togleSadBar()" class="xl:hidden">
+        <div class="w-8 h-3 border-t-4 color-border border-solid" 
+        [class.x]="!isOpen" 
+        [class.-x]="isOpen" 
+        ></div>
+        <div 
+        class="w-8 border-b-4 color-border border-solid"
+        [class.y]="!isOpen"
+        [class.-y]="isOpen"  
+        ></div>
+    </div>
+</nav>
+
+<!-- mobile -->
+<nav [ngClass]="{'menu-open': !isOpen, 'menu-closed': isOpen}" [class.open]="isOpen"
+    class="w-full h-80 bacgroud-orange flex items-center justify-center">
+    <mat-card class="card-color">
+        <div class="flex flex-col items-center justify-center w-40">
+            <div class="div"> <a href="" class="aHover">Produtos</a> </div>
+            <div class="div"> <a href="" class="aHover">Preço</a> </div>
+            <div class="div"> <a href="" class="aHover">Blog</a> </div>
+            <div class="div"> <a href="" class="aHover">Materiais</a> </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-2 mt-4">
+            <div class="div2"><a href="" class="">Fale com um especialista</a></div>
+            <div class="flex items-center justify-between bacgroud-orange text-white px-5 py-2 rounded-full gap-3 font-bold div3">
+                <mat-icon>account_circle</mat-icon> <a href="">Área do usuário</a>
+            </div>
+        </div>
+    </mat-card>
+</nav>
+

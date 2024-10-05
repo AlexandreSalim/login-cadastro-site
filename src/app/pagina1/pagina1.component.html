@@ -1,0 +1,130 @@
+//ate 1279px
+<section class="overflow-x-hidden h-screen backgroud flex flex-col items-start  xl:hidden">
+  <div class="relative top-28 p-5 z-0 div-pai flex flex-col items-center justify-center">
+
+    <div class="text-3xl font-sans font-bold lg:pr-44 md:pr-28">
+      <p>
+        <span class="span-color">Gestão</span>
+        de
+        <span class="span-color">Clínicas</span>
+        <span class="hidden sm:inline"> de forma </span>
+        automatizada com
+        <span class="span-color">Redução</span>
+        de
+        <span class="span-color">Impostos.</span>
+
+      </p>
+
+      <svg width="100%" height="40" class="relative bottom-7">
+        <path d="M 0 40 Q 10 30 500 30" stroke="grey" fill="transparent" />
+      </svg>
+    </div>
+
+    <div class="flex w-full gap-1 div-filho">
+      <div class="flex gap-1 items-center">
+        <mat-icon>home</mat-icon>
+        <mat-icon class="arrow">arrow_forward</mat-icon>
+      </div>
+      <div class="flex gap-1 items-center">
+        <p>teste de teste</p>
+        <mat-icon class="arrow">arrow_forward</mat-icon>
+        <p>testando e testando</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel-track" #carouselTrack (mouseenter)="slowDown()" (mouseleave)="speedUp()">
+      <ng-container *ngFor="let item of combinedItems">
+        <div class="carousel-item" *ngFor="let icon of icone">
+          <div class="carousel-item">
+            <mat-icon>{{icon.nome}}</mat-icon>
+            <span>{{icon.texto}}</span>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="mx-5">
+    <div>
+      <button class="carousel-item button">Video Explicativo <mat-icon>arrow_forward</mat-icon></button>
+
+      <p class="flex items-center gap-3 font-medium text-white cursor-pointer p">Fale com o time de Vendas
+        <mat-icon>arrow_forward</mat-icon>
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<section class="hidden h-screen backgroud2 xl:flex flex-col items-start">
+  <div class="relative top-28 p-5 z-0 div-pai flex w-full items-center">
+
+    <div class="z-10">
+
+      <div class="grid gap-3">
+        <p class="text-5xl">software de Gestão para</p>
+        <strong class="text-5xl text-white">Clínica Médicas</strong>
+      </div>
+
+      <div class="flex gap-4 mt-5">
+
+        <div class="card w-52 h-52 2xl:w-80 2xl:h-80">
+          <mat-icon>person</mat-icon>
+          <strong>titulo teste</strong>
+          <p>texto teste</p>
+        </div>
+
+        <div class="card w-52 h-52 2xl:w-80 2xl:h-80">
+          <mat-icon>person</mat-icon>
+          <strong>titulo teste</strong>
+          <p>texto teste</p>
+        </div>
+
+        <div class="card w-52 h-52 2xl:w-80 2xl:h-80">
+          <mat-icon>person</mat-icon>
+          <strong>titulo teste</strong>
+          <p>texto teste</p>
+        </div>
+
+      </div>
+
+      <div class="mt-5">
+        <div class="flex gap-10">
+          <button class="carousel-item button">Video Explicativo <mat-icon>arrow_forward</mat-icon></button>
+
+          <p class="flex items-center gap-3 font-medium text-white cursor-pointer p">Fale com o time de Vendas
+            <mat-icon>arrow_forward</mat-icon>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="w-1/2 relative h-96">
+
+      <div
+        class="w-96 h-96 bg-slate-200 z-0 absolute right-0 rounded-2xl flex flex-col justify-center items-center">
+
+        <div class="flex gap-40 caixa-rotacionada">
+
+          <div class="icone-flutua percent">
+            <div class="icone">
+              <mat-icon>percent</mat-icon>
+            </div>
+          </div>
+
+          <div class="icone-flutua send">
+            <div class="icone">
+              <mat-icon>send</mat-icon>
+            </div>
+          </div>
+
+        </div>
+        aqui entraria uma foto
+      </div>
+    </div>
+
+  </div>
+</section>

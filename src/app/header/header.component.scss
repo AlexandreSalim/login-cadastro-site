@@ -1,0 +1,187 @@
+.menu-open {
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    /* Transição suave ao abrir */
+  }
+  
+  .menu-closed {
+    transform: translateY(-150%);
+    opacity: 0.3;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    /* Transição suave ao fechar */
+  }
+  
+  .color-border {
+    border-color: #ff7640;
+  }
+  
+  .bacgroud-orange {
+    background-color: #ff7640;
+  }
+  
+  .card-color {
+    background-color: white;
+    height: 90%;
+    width: 80%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  
+  }
+  
+  .div {
+    height: 40px;
+    width: min-content;
+    transition: all 0.2s;
+    border-radius: 30px;
+    border: 2px #ff7640;
+    padding: 4px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    /* Borda inicial transparente */
+    transition: border-color 0.7s ease, opacity 0.7s ease;
+    /* Transição suave para a cor da borda e opacidade */
+    opacity: 0.7;
+    /* Opacidade inicial */
+  }
+  
+  .div:hover {
+    border: solid 2px #ff7640;
+    border-radius: 30px;
+  
+    a {
+      font-weight: 700;
+      color: #356c70;
+    }
+  }
+  
+  .aHover {
+    color: #6ca2a8;
+  }
+  
+  .div2 {
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+    border: 2px solid #ff7640;
+    padding: 4px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 229px;
+  
+    a {
+      font-weight: 700;
+      color: #356c70;
+    }
+  }
+  
+  .div2:hover {
+    font-size: small;
+    animation: contract-expand 1s ease forwards;
+  }
+  
+  .div3{width: 179px;}
+  
+  .div3:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #356c70;
+    font-size: small;
+    padding: 0.5rem 1.4rem;
+  
+    mat-icon {
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    animation: contract-expand 1s ease forwards;
+    /* Aplica a animação no hover */
+  
+  }
+  
+  .x {
+    position: relative;
+    top: 10px;
+    width: 25px;
+    animation: efeitox .5s ease forwards;
+  }
+  
+  .y {
+    position: relative;
+    bottom: 1px;
+    left: 2px;
+    width: 25px;
+    animation: efeitoy .5s ease forwards;
+  }
+  
+  .-x{animation: efeito-x .5s ease forwards;position: relative;}
+  .-y{animation: efeito-y .5s ease forwards;}
+  
+  .div-pai-width{width: 850px;}
+  
+  .logo{transition: all 0.3s ease-in-out;}
+  .logo:hover{transform: rotate(-5deg); mat-icon{font-size: 20px;}}
+  .nav{transition: all 1s ease-in-out; animation: nav-color .5s ease forwards; z-index: 0;}
+  
+  
+  @keyframes contract-expand {
+    0% {
+      transform: scale(1);
+      /* Estado inicial */
+    }
+  
+    30% {
+      transform: scale(0.9);
+      /* Primeira contração */
+    }
+  
+    60% {
+      transform: scale(1);
+      /* Crescimento pequeno */
+    }
+  
+    100% {
+      transform: scale(1);
+      /* Volta ao estado original */
+    }
+  }
+  
+  
+  @keyframes nav-color {
+    0% {
+     background-color: black;
+     opacity: 0;
+    }
+  
+    100% {
+      background-color: white;
+      opacity: 1;
+    }
+  
+  }
+  
+  @keyframes efeitox {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(45deg);}
+  }
+  
+  @keyframes efeitoy {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(-45deg);}
+  }
+  
+  @keyframes efeito-x {
+    0%{transform: rotate(-45deg); top: 8px;}
+    100%{transform: rotate(0deg); top: 0px;}
+  }
+  
+  @keyframes efeito-y {
+    0%{transform: rotate(45deg);}
+    100%{transform: rotate(0deg);}
+  }
